@@ -12,6 +12,14 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## [Unreleased]
 
 ### Added
+- Support for Alpaca (US Stocks), Forex (TwelveData), and Metals (TwelveData) exchanges
+- New exchange icons for alpaca, forex, and metals
+- Extended exchange type system to support 'stock', 'forex', and 'metals' types
+
+### Changed
+- Updated Exchange type definition to include new asset class types
+
+### Previously Added
 - Documentation system with multi-language support (EN/CN/RU/UK)
 - Complete getting-started guides (Docker, Custom API)
 - Architecture documentation with system design details
