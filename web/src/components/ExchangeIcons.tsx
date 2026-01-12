@@ -15,6 +15,9 @@ const ICON_PATHS: Record<string, string> = {
   hyperliquid: '/exchange-icons/hyperliquid.png',
   aster: '/exchange-icons/aster.svg',
   lighter: '/exchange-icons/lighter.png',
+  alpaca: '/exchange-icons/alpaca.svg',
+  forex: '/exchange-icons/forex.svg',
+  metals: '/exchange-icons/metals.svg',
 }
 
 // 通用图标组件
@@ -95,7 +98,13 @@ export const getExchangeIcon = (
               ? 'aster'
               : lowerType.includes('lighter')
                 ? 'lighter'
-                : lowerType
+                : lowerType.includes('alpaca')
+                  ? 'alpaca'
+                  : lowerType.includes('forex')
+                    ? 'forex'
+                    : lowerType.includes('metals')
+                      ? 'metals'
+                      : lowerType
 
   const iconProps = {
     width: props.width || 24,
